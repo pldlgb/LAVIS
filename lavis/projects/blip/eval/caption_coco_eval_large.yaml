@@ -33,6 +33,7 @@ run:
 
   evaluate: True
   test_splits: ["test"]
+  report_metric: False
 
   device: "cuda"
   world_size: 1

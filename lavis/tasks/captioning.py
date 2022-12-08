@@ -58,7 +58,7 @@ class CaptionTask(BaseTask):
 
         img_ids = samples["image_id"]
         for caption, img_id in zip(captions, img_ids):
-            results.append({"caption": caption, "image_id": int(img_id)})
+            results.append({"caption": caption, "image_id": img_id})
 
         return results
 
@@ -69,6 +69,8 @@ class CaptionTask(BaseTask):
             filename="{}_epoch{}".format(split_name, epoch),
             remove_duplicate="image_id",
         )
+        print(f"================= self.report_metric :{self.report_metric}=================")
+        print(f"================= self.report_metric :{self.report_metric}=================")
 
         if self.report_metric:
             metrics = self._report_metrics(
