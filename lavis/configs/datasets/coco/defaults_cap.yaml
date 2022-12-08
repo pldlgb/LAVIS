@@ -23,9 +23,9 @@ datasets:
         test:
           url: https://storage.googleapis.com/sfr-vision-language-research/datasets/coco_karpathy_test.json
           md5: 3ff34b0ef2db02d01c37399f6a2a6cd1
-          storage: /data/nt12_hdd_gluster/myself/data/downstream/MMDialog/MMDialogConversations/train/mmdialog_captions_train.json
+          storage: /data/nt12_ssd_gluster/public/cloudwater/data/pretrain/MMDialogConversations/train/mmdialog_captions_train.json
       images:
-        storage: /data/nt12_hdd_gluster/myself/data/downstream/MMDialog/MMDialogImage/
+        storage: /data/nt12_ssd_gluster/public/cloudwater/data/pretrain/MMDialogImage/
 
 # datasets:
 #   coco_caption: # name of the dataset builder
